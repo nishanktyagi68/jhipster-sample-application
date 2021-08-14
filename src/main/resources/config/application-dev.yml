@@ -18,12 +18,7 @@ logging:
     ROOT: DEBUG
     tech.jhipster: DEBUG
     org.hibernate.SQL: DEBUG
-    com.mycompany.myapp: DEBUG
-
-management:
-  health:
-    elasticsearch:
-      enabled: false
+    com.michapp: DEBUG
 
 spring:
   devtools:
@@ -37,8 +32,8 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:./target/h2db/db/jhipstersampleapplication;DB_CLOSE_DELAY=-1
-    username: jhipsterSampleApplication
+    url: jdbc:h2:file:./target/h2db/db/michapp;DB_CLOSE_DELAY=-1
+    username: michapp
     password:
     hikari:
       poolName: Hikari
@@ -49,10 +44,6 @@ spring:
       enabled: false
   jpa:
     database-platform: tech.jhipster.domain.util.FixedH2Dialect
-  data:
-  elasticsearch:
-    rest:
-      uris: http://localhost:9200
   liquibase:
     # Remove 'faker' if you do not want the sample data to be loaded automatically
     contexts: dev, faker
