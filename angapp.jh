@@ -1,0 +1,17 @@
+
+application {
+  config {
+    baseName michapp,
+    applicationType monolith,
+    packageName com.michapp,
+    prodDatabaseType postgresql,
+    clientFramework angular
+  }
+  entities *
+}
+
+entity Application {
+	name String,
+    active Boolean
+}
+    
